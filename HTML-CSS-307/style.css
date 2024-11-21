@@ -1,0 +1,457 @@
+/*-----------NAVBAR----------*/
+
+.navbar {
+  height: 100px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background-color: #141214;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: black;
+ 
+  
+}
+.nav-items > ul > li {
+  position: relative;
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.nav-items > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.17rem;
+  background-color: #c52726;
+  left: 0;
+  bottom: 0;
+  transform-origin: 0% 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-items > ul > li:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-logo {
+  height: 40px;
+  width: 80px;
+}
+.img {
+  height: 80px;
+  width: 70px;
+
+}
+
+
+.nav-button a {
+    color: white;
+    position: relative;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(227, 101, 101);
+    transition: width 0.3s ease, left 0.3s ease;
+    
+}
+
+.nav-button a:hover {
+  background-color: #66CDAA;
+  color: #698B69;
+}
+
+
+
+/*-------- DROPDOWN ARROW -------------------- */
+
+
+
+
+==================================
+/*-------- CLEAR FIX ---Column layout using float using clearfix- */
+
+  
+  h3 {
+    
+    text-align: center;
+    background-color: #66CDAA;
+    font-style: italic;
+
+  }
+  
+    section {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+  
+    article {
+    background: 	#698B69;
+    border-right: 2px solid black;
+    height: 650px;
+    width: 59.6%;
+    float: left;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  
+  
+  aside {  
+    height: 100px;
+    float: right;
+    width: 40%;
+  }
+  
+  .column2:last-child {
+    border-bottom: 0px solid black;
+    height: 350px;
+  }
+  
+  .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+
+  .comfortTeaImg {
+	display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  transition: transform 400ms ease-out;
+	
+}
+
+.comfortTeaImg:hover {
+  transform: scale(1.15);
+}
+
+.clearfix span {
+  color: #c52726;
+  text-transform: capitalize;
+}
+
+  /*---------Text container CLEARFIX-------*/
+
+  
+  .text-container p{
+  margin: 0;
+  font-size: 40px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat; 
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100; 
+    
+  }
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+
+  /*----------  ----------    */
+  
+
+    
+
+
+
+===============================================================
+
+/*-----------TABLE CONTACT -----------------------------*/
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.containerTable {
+
+  background-color:#8FBC8F;
+  padding: 20px;
+  position: absolute;
+  
+  height: 400px;
+  top: 2px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 700px;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 15;
+  margin-left: 0;
+  font-size: 15px;
+}
+
+
+h1 {
+  font-family: "Lugrasimo", cursive;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  enable-background: accumulate;
+  padding-top: 0%;
+  animation: k 4s linear infinite
+  
+}
+
+th, td {
+  border: 1px solid #a0c8cf;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #B4EEB4;  
+}
+
+/*----- table headings -----*/
+th {
+  background-color: #2E8B57;
+  padding: 10px;
+  color: #BFEFFF;
+  width: 20px;
+  font-size: 18px;
+}
+
+/*----- table data (a cell) -----*/
+td {
+  padding: 8px;
+  border-bottom: 1px solid black;
+  
+}
+  
+/*----- table row hover animation -----*/
+tr {
+  transition: background-color 0.5s;
+}
+tr:hover {
+  background-color: #BBFFFF;
+}
+
+td {
+  transition: background-color 0.4s;
+}
+td:hover {
+  background-color: #BBFFFF;
+}
+
+ 
+span, h1 { color: #FF7256}
+
+
+
+/*----------------TABLE IMAGE------------  */
+td img{
+  width: 40px;
+  height: 40px;
+  
+
+}
+
+/*----------------BUTTONS------------  */
+.view,
+.delete {
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.view {
+    background-color: #23a6e3;
+}
+
+.delete {
+    background-color: #32CD32;
+}
+
+
+
+======================================================
+/*--------- CARD BOOTSTRAP  ------------------------- */
+
+
+
+
+
+
+
+/*--------- FORMS   ------------------------- */
+form {
+  min-width:300px;
+  max-width:400px;
+  padding:20px;
+  margin:0 auto;
+  background:#ffffff59; 
+  box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
+}
+
+form input {
+  border:1px solid #eee;
+  border-radius:0;
+  padding:5px 8px;
+  color:#444;
+}
+
+form button {
+  color:#555;
+  background:#ffffffad;
+  border:1px solid #fff;
+  margin-top:20px;
+  border-radius:0px;
+}
+
+form button:hover {
+  background:#fff;
+}
+
+
+input search [type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input search [type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+
+
+=======================================================================
+/*--------- FORMS two  ------------------------- */
+
+h1{
+  margin: 0 auto;
+  padding-top: 20%;
+  padding-left: 15%;
+  text-transform:uppercase;
+	font-size:30px;
+	color:black;
+}
+
+
+h2{
+	margin: 0 auto;
+	padding-left: 15%;
+	font-size:18px;
+	color:#356568;
+}
+
+  .nav {
+	
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 15%;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    border-radius: 5px; 
+    text-align: center;
+    padding-top: 1px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    
+  }
+  
+  .username {
+    border: 1px solid #a6a6a6;
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 25px;
+    padding-left: 9px;
+    color: #6c6c6c;
+    background: #fcfcfc;
+    outline: none;
+  }
+  
+  .password {
+    border: 1px solid #a6a6a6;
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 3px;
+    padding-left: 9px;
+    color: #6c6c6c;
+    background: #fcfcfc;
+    outline: none;
+  }
+  
+  .password:hover, .username:hover {
+    box-shadow: 0 0 10px #CD5555; 
+    border: 1px #b22222	 solid ;
+  }
+  
+  .password:focus, .username:focus, .button:focus, .button:hover:focus{
+    box-shadow: 0 0 10px rgba(178,34,34, 1); 
+    border: 1px #b22222	 solid ;
+  }
+  
+  .button {
+    color:#fff;
+    font-size:20px;
+    border: 1px solid #a6a6a6;
+    width: 243px;
+    height: 43px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 6px;
+    outline: none;	#FF6A6A; 
+    background: #FF6A6A
+   
+  }
+  
+     
+  label {
+    position: relative;
+    top: 5px;
+    margin-right: 115px;
+  }
+  label span {
+    margin-left: 5px;
+    font-size:14px;
+  }
+  
+    
